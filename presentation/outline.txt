@@ -1,0 +1,27 @@
+Spring Talk Outline
+
+Meet Spring 3.1
+	3.1 RC1 is just released.
+	What is Spring and why do I care?
+		Spring Patterns
+		Spring Ecosystem
+		Spring vs X
+			EJB3
+			Google Guice
+			Roll Your Own
+	What's new in Spring 3.1?
+	Focus on two areas:
+		XML Free Spring Basics
+		XML Free Spring with RESTful Interaction
+
+Crash Course in Spring	
+	Injection
+	Autowiring
+	DDD
+	MVC
+	Other Spring Things
+
+Conclusions
+	Did Spring show any promise?
+	How can it be used in my application?
+	When does Spring really shine?
