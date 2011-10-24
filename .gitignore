@@ -4,3 +4,4 @@
 *.iws
 build/
 out/
+.DS_Store*

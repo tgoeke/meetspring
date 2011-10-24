@@ -1,10 +1,9 @@
 package basic;
 
 import domain.construction.impl.LittleHouse;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class BasicSpringApp {
+public class NoXmlBasicSpringApp {
 
     public static void main( String[] args ) {
 
@@ -16,7 +15,9 @@ public class BasicSpringApp {
 
         System.out.println( "Loading Spring Config!");
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+        context.scan("domain.construction");
+        context.refresh();
 
         for( String name : context.getBeanDefinitionNames() ) {
             System.out.println("Bean: " + name );

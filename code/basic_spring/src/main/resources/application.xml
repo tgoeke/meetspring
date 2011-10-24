@@ -7,15 +7,15 @@ http://www.springframework.org/schema/beans http://www.springframework.org/schem
     <!-- NOTE: We wouldn't usually build a domain this way. -->
     <!-- Consider this a simple example of dependency injection. -->
 
-    <bean id="knob" class="domain.contruction.impl.SilverHandle"/>
+    <bean id="knob" class="domain.construction.impl.SilverHandle"/>
 
-    <bean id="door" class="domain.contruction.impl.RedDoor">
+    <bean id="door" class="domain.construction.impl.RedDoor">
         <constructor-arg ref="knob"/>
     </bean>
 
-    <bean id="fence" class="domain.contruction.impl.PicketFence"/>
+    <bean id="fence" class="domain.construction.impl.PicketFence"/>
 
-    <bean id="house" class="domain.contruction.impl.LittleHouse">
+    <bean id="house" class="domain.construction.impl.LittleHouse">
         <constructor-arg ref="fence"/>
         <constructor-arg ref="door"/>
     </bean>
