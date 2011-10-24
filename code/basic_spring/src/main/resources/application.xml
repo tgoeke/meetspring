@@ -4,6 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
 
+    <!-- NOTE: We wouldn't usually build a domain this way. -->
+    <!-- Consider this a simple example of dependency injection. -->
 
     <bean id="knob" class="domain.contruction.impl.SilverHandle"/>
 
