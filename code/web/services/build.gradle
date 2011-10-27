@@ -1,0 +1,36 @@
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'jetty'
+
+sourceCompatibility = 1.6
+version = '0.0.1'
+
+repositories {
+	mavenCentral()
+    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/snapshot'
+    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/release'
+    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/external'
+    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/milestone'
+    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/release'
+    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/external'
+    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/milestone'
+    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/snapshot'
+}
+
+dependencies {
+    compile  'org.springframework:org.springframework.core:3.1.0.RC1'
+    compile  'org.springframework:org.springframework.context:3.1.0.RC1'
+    compile  'org.springframework:org.springframework.web:3.1.0.RC1'
+    compile  'org.springframework:org.springframework.web.servlet:3.1.0.RC1'
+    compile  'cglib:cglib-nodep:2.2'
+    compile  ('org.mortbay.jetty:servlet-api:3.0.20100224') {
+        exclude module: 'servlet-api:javax.servlet'
+    }
+    compile  ('javax.servlet.jsp:jsp-api:2.1') {
+        exclude module: 'servlet-api:javax.servlet'
+    }
+    compile  'javax.servlet.jsp.jstl:jstl-api:1.2'
+    compile  'org.glassfish.web:jstl-impl:1.2'
+    compile  'commons-logging:commons-logging:1.1.1'
+    compile  'log4j:log4j:1.2.16'
+}

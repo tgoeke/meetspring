@@ -1,0 +1,19 @@
+body {
+    /*background: url("../images/flickr-222804678-hd.jpg") repeat-x scroll 0 0 #323232;*/
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+#headline {
+    background: #7fffd4;
+    opacity: 0.75;
+    filter: alpha(opacity=50);
+    margin: 0.3em;
+    padding: 0.3em;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: "Comic Sans MS";
+    font-size: 250%;
+}
