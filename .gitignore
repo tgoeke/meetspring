@@ -4,4 +4,6 @@
 *.iws
 build/
 out/
+.idea/
 .DS_Store*
+classes/

@@ -1,23 +1,14 @@
 apply plugin: 'java'
 apply plugin: 'idea'
 
-sourceCompatibility = 1.6
+sourceCompatibility = 1.7
 version = '0.0.1'
 
 repositories {
 	mavenCentral()
-    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/snapshot'
-    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/release'
-    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/external'
-    mavenRepo urls: 'http://repository.springsource.com/maven/bundles/milestone'
-    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/release'
-    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/external'
-    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/milestone'
-    mavenRepo urls: 'http://repository.springsource.com/maven/libraries/snapshot'
+    maven { url 'http://repo.springsource.org/release' }
 }
 
 dependencies {
-    compile  group: 'org.springframework', name: 'org.springframework.core', version: '3.1.0.RC1'
-    compile  group: 'org.springframework', name: 'org.springframework.context', version: '3.1.0.RC1'
-    compile  group: 'cglib', name: 'cglib-nodep', version: '2.2'
+    compile  group: 'org.springframework', name: 'spring-context', version: '3.2.2.RELEASE'
 }
